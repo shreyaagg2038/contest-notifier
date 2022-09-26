@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Contest notifier!",
+  "description": "This extenstion would notify current/upcoming scheduled coding contests on famous sites like CodeChef, CodeForces, AtCoder",
+  "version": "2.0",
+  "permissions": ["https://clist.by/api/v2/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon128.png",
+  	"default_title": "Contest notifier",
+  	"default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js; object-src 'self'",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cp-contest-notifier@cp-notifier-addon"
+    }
+  },
+  "css": ["popup.css"]
+}

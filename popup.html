@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contest notifier!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="popup.js"></script>
+
+    <!-- Bootstrap and CSS imports -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="container-fluid" style="background-color: black;">
+    <h3 id="current-contest" class="container-fluid"align="center" style="color: white;">
+        There are no contests today! :(
+    </h3>
+    <hr>
+    <div id="coming-contests" align="center">
+        <table id="coming-contests-table" class="table table-borderless table-dark">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Contest name</th>
+                    <th style="text-align: center;">Duration (hrs)</th>
+                    <th style="text-align: center;">Start time</th>
+                    <th style="text-align: center;">Link to Contest</th>
+                </tr>
+            </thead>
+            <tbody id="coming-contests-table-body" align="center">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
